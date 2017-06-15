@@ -1,6 +1,3 @@
-#Exchange
-##A currency converter for elementary OS.
-
 This application is in development, what I want to achieve is a simple app that works perfectly in the elementary ecosystem. Basically, this is a project for me to learn programming with Vala.
 
 This aplication uses Fixer.io API to download daily rates of currency exchange for 32 different currencies.
