@@ -13,3 +13,6 @@ I know all those things can be done since I have in my mind many ways thought to
 Everything that I have achieved so far is working, and I believe it looks beautiful, since it is the design I had thought to give it.
 
 This is Open Source, but I plan to monetize this app and every other I make in elementary's appstore, in order of being able to learn more and dedicate more time to programming apps for elementary.
+
+To build you need to run this:
+`valac --pkg gtk+-3.0 --pkg libsoup-2.4 --pkg json-glib-1.0 exchange.vala`
