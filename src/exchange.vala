@@ -27,7 +27,7 @@ public class mainwindow : Gtk.Dialog {
 		this.window_position = Gtk.WindowPosition.CENTER;
 		this.destroy.connect (Gtk.main_quit);
 		this.border_width = 12;
-		this.title = "Exchange";
+		this.title = _("Exchange");
 		this.resizable = false;
 		var grid = new Gtk.Grid ();
 		var entry = new Gtk.Entry ();
@@ -78,7 +78,7 @@ public class mainwindow : Gtk.Dialog {
 		base_currency.set_active(8);
 		grid.attach (base_currency,1,0,1,1);
 		base_currency.margin = 6;
-		var label = new Gtk.Label ("to");
+		var label = new Gtk.Label (_("to"));
 		grid.attach (label,2,0,1,1);
 		label.margin = 6;
 		var result_currency = new Gtk.ComboBoxText();
