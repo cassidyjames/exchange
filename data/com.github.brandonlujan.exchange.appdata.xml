@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2017 Brandon Luján brisluar@gmail.com -->
+<component type="desktop">
+  <id>com.github.brandonlujan.exchange.desktop</id>
+  <metadata_license>CC0</metadata_license>
+  <name>Exchange</name>
+  <summary>A currency converter for elementary</summary>
+  <description>
+    <p>Applet that uses Fixer.io API to download daily rates of currency exchange for 32 different currencies.</p>
+    <p>Easy to use and beautiful. With the look and feel of elementary.</p>
+  </description>
+  <categories>
+    <category>Utility</category>
+  </categories>
+  <custom>
+     <value key="x-appcenter-color-primary">rgb(56,56,56)</value>
+     <value key="x-appcenter-color-primary-text">rgb(213,213,213)</value>
+     <value key="x-appcenter-suggested-price">1</value>
+  </custom>
+</component>
