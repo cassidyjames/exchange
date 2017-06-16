@@ -142,7 +142,25 @@ public class mainwindow : Gtk.Dialog {
 			if (curname2 == "EUR") {currency2 = 1.0000;}
 			else {currency2 = rates.get_double_member (result_currency.get_active_text());}
 			var conv_result = double.parse(entry.get_text ()) * currency2 / currency1;
-			label_result.set_markup ("""<span font="36">%s</span>""".printf(conv_result.to_string()));
+			label_result.set_markup ("""<span font="36">%0.2f</span>""".printf(conv_result));
+			entry.changed.connect (() => {
+				conv_result = double.parse(entry.get_text ()) * currency2 / currency1;
+				label_result.set_markup ("""<span font="36">%0.2f</span>""".printf(conv_result));
+			});
+			base_currency.changed.connect (() => {
+				curname1 = base_currency.get_active_text();
+				if (curname1 == "EUR") {currency1 = 1.0000;}
+				else {currency1 = rates.get_double_member (base_currency.get_active_text());}
+				conv_result = double.parse(entry.get_text ()) * currency2 / currency1;
+				label_result.set_markup ("""<span font="36">%0.2f</span>""".printf(conv_result));
+			});
+			result_currency.changed.connect (() => {
+				curname2 = result_currency.get_active_text();
+				if (curname2 == "EUR") {currency2 = 1.0000;}
+				else {currency2 = rates.get_double_member (result_currency.get_active_text());}
+				conv_result = double.parse(entry.get_text ()) * currency2 / currency1;
+				label_result.set_markup ("""<span font="36">%0.2f</span>""".printf(conv_result));
+			});
 		}
 		catch (Error e) {
 			warning (e.message);
