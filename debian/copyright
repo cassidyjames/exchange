@@ -1,9 +1,9 @@
 Format: http://dep.debian.net/deps/dep5
-Upstream-Name: cmake-hello-world
-Source: https://github.com/brandonlujan/exchange
+Upstream-Name: com.github.brandonlujan.exchange
+Source: https://www.github.com/brandonlujan/exchange
 
 Files: *
-Copyright: 2017 Brandon Luján <brisluar@gmail.com>
+Copyright: 2017 Brandon Luján
 License: GPL-3.0+
 
 License: GPL-3.0+
