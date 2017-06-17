@@ -1,10 +1,10 @@
 [Desktop Entry]
 Name=Exchange
 GenericName=Currency Converter
-Comment=Convert from and to 32 different currencies
-Categories=Utility;
+Comment=Convert currencies with no hassle
+Categories=Utility;GTK;
 Exec=com.github.brandonlujan.exchange
-Icon=application-default-icon
+Icon=con.github.brandonlujan.exchange
 Terminal=false
 Type=Application
 X-GNOME-Gettext-Domain=Exchange

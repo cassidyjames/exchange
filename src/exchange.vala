@@ -33,7 +33,7 @@ public class mainwindow : Gtk.Dialog {
 		var entry = new Gtk.Entry ();
 		grid.attach (entry,0,0,1,1);
 		entry.margin = 6;
-		entry.placeholder_text = "1.00";
+		entry.placeholder_text = "0.00";
 		entry.set_alignment(1);
 		entry.set_text("1.00");
 		entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear");
