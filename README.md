@@ -12,4 +12,17 @@ To do:
 1. Being able to select any date and make the convertions with that day's rates.
 2. Automatically update the currency options in case any new currency gets support from Fixer.io's API.
 
-You can compile with `valac -X -lm --pkg gtk+-3.0 --pkg libsoup-2.4 --pkg json-glib-1.0 exchange.vala`
+To build you will need to do as follows in the terminal:
+
+`meson build`
+`cd build`
+`mesonconf -Dprefix=/usr`
+`ninja`
+
+To install:
+
+`sudo ninja install`
+
+To execute:
+
+`com.github.brandonlujan.exchange`
