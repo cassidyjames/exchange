@@ -14,5 +14,4 @@ Standards-Version: 3.9.3
 Package: com.github.brandonlujan.exchange
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}
-Description: Convert currencies with no hassle.
-Applet that uses Fixer.io API to download daily rates of currency exchange for 32 different currencies.
+Description: Convert currencies with no hassle
