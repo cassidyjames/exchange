@@ -1,4 +1,10 @@
-com.github.brandonlujan.exchange (0.1) xenial; urgency=low
+com.github.brandonlujan.exchange (0.1.1) xenial; urgency=medium
+
+  * Fixed errors to build the application.
+
+ -- Brandon Luján <brisluar@gmail.com>  Sat, 17 Jun 2017 17:43
+
+com.github.brandonlujan.exchange (0.1.0) xenial; urgency=low
 
   * Initial Release.
 
