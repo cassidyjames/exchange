@@ -1,3 +1,15 @@
+com.github.brandonlujan.exchange (0.1.3) xenial; urgency=medium
+
+  * Fixed screenshot
+
+ -- Brandon Luján <brisluar@gmail.com>  Sun, 18 Jun 2017 09:55
+
+com.github.brandonlujan.exchange (0.1.2) xenial; urgency=medium
+
+  * Now it should build correctly
+
+ -- Brandon Luján <brisluar@gmail.com>  Sat, 17 Jun 2017 19:21
+
 com.github.brandonlujan.exchange (0.1.1) xenial; urgency=medium
 
   * Fixed errors to build the application.
