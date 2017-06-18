@@ -2,7 +2,7 @@
 <!-- Copyright 2017 Brandon Luján <brisluar@gmail.com> -->
 <component type="desktop-application">
   <id>com.github.brandonlujan.exchange.desktop</id>
-  <metadata_license>CC-0-1.0</metadata_license>
+  <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+</project_license>
   <name>Exchange</name>
   <summary>Convert currencies with no hassle</summary>
