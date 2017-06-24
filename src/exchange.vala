@@ -36,7 +36,7 @@ public class mainwindow : Gtk.Dialog {
 		entry.placeholder_text = "0.00";
 		entry.set_alignment(1);
 		entry.set_text("1.00");
-		entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear");
+		entry.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "close-symbolic");
     entry.icon_press.connect ((pos, event) => {
       if (pos == Gtk.EntryIconPosition.SECONDARY) {
         entry.set_text ("");
@@ -78,9 +78,9 @@ public class mainwindow : Gtk.Dialog {
 		base_currency.set_active(8);
 		grid.attach (base_currency,1,0,1,1);
 		base_currency.margin = 6;
-		var label = new Gtk.Label (_("to"));
-		grid.attach (label,2,0,1,1);
-		label.margin = 6;
+		var to = new Gtk.Button.from_icon_name ("object-flip-horizontal-symbolic");
+		grid.attach (to,2,0,1,1);
+		to.margin = 6;
 		var result_currency = new Gtk.ComboBoxText();
 		result_currency.append_text("AUD");
 		result_currency.append_text("BGN");
@@ -160,6 +160,12 @@ public class mainwindow : Gtk.Dialog {
 				else {currency2 = rates.get_double_member (result_currency.get_active_text());}
 				conv_result = double.parse(entry.get_text ()) * currency2 / currency1;
 				label_result.set_markup ("""<span font="36">%0.2f</span>""".printf(conv_result));
+			});
+			to.clicked.connect (() => {
+				var change1 = base_currency.get_active ();
+				var change2 = result_currency.get_active ();
+				base_currency.set_active (change2);
+				result_currency.set_active (change1);
 			});
 		}
 		catch (Error e) {
