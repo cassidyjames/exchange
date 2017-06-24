@@ -1,4 +1,4 @@
-# ![icon](data/icons/128/com.github.brandonlujan.exchange.svg) Exchange
+# Exchange
 ## Convert currencies with no hassle
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.brandonlujan.exchange)
 
