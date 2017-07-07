@@ -7,8 +7,9 @@
   <name>Exchange</name>
   <summary>Convert currencies with no hassle</summary>
   <description>
-    <p>Applet that uses Fixer.io API to download daily rates of currency exchange for 32 different currencies.</p>
+    <p>Application that uses Fixer.io API to download daily rates of currency exchange.</p>
     <p>Easy to use and beautiful. With the look and feel of elementary.</p>
+    <p>Now you can make conversions with the rates of past dates.</p>
   </description>
   <provides>
     <binary>com.github.brandonlujan.exchange</binary>
@@ -20,6 +21,8 @@
   </screenshots>
   <developer_name>Brandon Luján</developer_name>
   <url type="bugtracker">https://github.com/brandonlujan/exchange/issues</url>
+  <url type="homepage">https://github.com/brandonlujan/exchange</url>
+  <url type="donation">https://www.paypal.me/brandonluar</url>
   <categories>
     <category>Utility</category>
   </categories>
