@@ -8,7 +8,7 @@ Build-Depends: debhelper (>= 9),
                valac (>= 0.16),
                libsoup2.4-dev,
                libjson-glib-dev (>=1.0),
-               granite-dev,
+               libgranite-dev,
                
 Standards-Version: 3.9.3
 
