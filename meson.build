@@ -1,5 +1,5 @@
 project('com.github.brandonlujan.exchange', ['vala','c'],
-    version: '0.1.0'
+    version: '1.0.0'
 )
 
 gnome = import('gnome')
@@ -16,9 +16,10 @@ c_args = [
 
 executable(
     'com.github.brandonlujan.exchange',
-    'src/exchange.vala',
+    'src/application.vala',
     c_args: c_args,
     dependencies: [
+        dependency('granite'),
         dependency('glib-2.0'),
         dependency('gobject-2.0'),
         dependency('gtk+-3.0'),
