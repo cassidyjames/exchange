@@ -1,6 +1,10 @@
 # Exchange
 ## Convert currencies with no hassle
 
+* Uses [fixer.io](https://www.fixer.io)'s API to convert currencies
+* You can go back in time with a date selector to make currencies in their old rates
+* It autosaves your last used currencies so you don't have to select them again when relaunching
+* Beautiful, with a feel and look of elementary OS
 
 ## Install it from elementary's appcenter
 [![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.brandonlujan.exchange.desktop)
