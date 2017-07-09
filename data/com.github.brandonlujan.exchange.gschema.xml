@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="com.github.brandonlujan.exchange"
+  path="/com/github/brandonlujan/exchange/"
+  gettext-domain="com.github.brandonlujan.exchange">
+    <key name="currency1" type="s">
+      <default>"EUR"</default>
+      <summary>Currency to convert</summary>
+      <description>
+        The currency that's gonna be converted.
+      </description>
+    </key>
+    
+    <key name="currency2" type="s">
+      <default>"USD"</default>
+      <summary>Currency to convert to</summary>
+      <description>
+        The currency in which it's gonna be converted.
+      </description>
+    </key>
+  </schema>
+</schemalist>
+

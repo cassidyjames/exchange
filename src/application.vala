@@ -18,6 +18,9 @@
 */
 
 public class Exchange : Granite.Application {
+    
+    private Settings settings = new Settings ("com.github.brandonlujan.exchange");
+    
     construct {
         
         application_id = "com.github.brandonlujan.exchange";
@@ -98,7 +101,11 @@ public class Exchange : Granite.Application {
         cur1_combo.append ("EUR", "EUR");
         cur2_combo.append ("EUR", "EUR");
         
-        var date_selected = date_picker.get_text ();
+        string date_selected, cur1_selected, cur2_selected;
+        
+        double cur1_value, cur2_value, entry_value;
+        
+        date_selected = date_picker.get_text ();
         var rates = rates_for (date_selected);
         
         foreach (var currency in rates.get_members ()) {
@@ -108,11 +115,11 @@ public class Exchange : Granite.Application {
         
         }
         
-        cur1_combo.set_active_id ("EUR");
-        cur2_combo.set_active_id ("USD");
+        cur1_combo.set_active_id (settings.get_string ("currency1"));
+        cur2_combo.set_active_id (settings.get_string ("currency2"));
         
-        var cur1_selected = cur1_combo.get_active_id ();
-        var cur2_selected = cur2_combo.get_active_id ();
+        cur1_selected = cur1_combo.get_active_id ();
+        cur2_selected = cur2_combo.get_active_id ();
         
         date_picker.changed.connect (() => {
             
@@ -140,9 +147,7 @@ public class Exchange : Granite.Application {
             
         });
         
-        var entry_value = double.parse (entry.get_text ());
-        
-        double cur1_value, cur2_value;
+        entry_value = double.parse (entry.get_text ());
         
         if (cur1_selected == "EUR") { cur1_value = 1; }
         else { cur1_value = rates.get_double_member (cur1_selected); }
@@ -171,6 +176,8 @@ public class Exchange : Granite.Application {
             
             result_label.set_markup ("""<span font="36">%0.2f</span>""".printf(result));
             
+            settings.set_string ("currency1", cur1_selected);
+            
         });
         
         cur2_combo.changed.connect (() => {
@@ -183,6 +190,8 @@ public class Exchange : Granite.Application {
             var result = entry_value / cur1_value * cur2_value;
             
             result_label.set_markup ("""<span font="36">%0.2f</span>""".printf(result));
+            
+            settings.set_string ("currency2", cur2_selected);
             
         });
         
@@ -197,7 +206,7 @@ public class Exchange : Granite.Application {
         });
         
         entry.set_text("1.00");
-                
+        
     }
     
     public static Json.Object rates_for (string date) {
