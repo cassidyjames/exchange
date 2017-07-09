@@ -9,3 +9,8 @@ Terminal=false
 Type=Application
 X-GNOME-Gettext-Domain=Exchange
 Keywords=Exchange;Currency;Converter;
+
+[Desktop Action AboutDialog]
+Exec=com.github.brandonlujan.exchange --about
+Name=About Exchange
+Name[es]=Sobre Exchange
