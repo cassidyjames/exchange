@@ -9,7 +9,7 @@
 * Beautiful, with a feel and look of elementary OS
 
 ## Install it from elementary's appcenter
-[![Get it on AppCenter](https://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.brandonlujan.exchange.desktop)
+[![Get it on AppCenter](http://appcenter.elementary.io/badge.svg)](https://appcenter.elementary.io/com.github.brandonlujan.exchange.desktop)
 
 ## Consider donating me to keep on making good content for elementary OS
 
