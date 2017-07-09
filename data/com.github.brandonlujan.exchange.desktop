@@ -9,6 +9,7 @@ Terminal=false
 Type=Application
 X-GNOME-Gettext-Domain=Exchange
 Keywords=Exchange;Currency;Converter;
+Actions=AboutDialog;
 
 [Desktop Action AboutDialog]
 Exec=com.github.brandonlujan.exchange --about
