@@ -1,3 +1,9 @@
+com.github.brandonlujan.exchange (1.1.0) xenial; urgency=medium
+
+  * App saves state (only last currencies used)
+  
+ -- Brandon Luján <brisluar@gmail.com>  Sat, 08 Jul 2017 19:16
+
 com.github.brandonlujan.exchange (1.0.0) xenial; urgency=medium
 
   * Now it finally supports different dates to apply conversions.
